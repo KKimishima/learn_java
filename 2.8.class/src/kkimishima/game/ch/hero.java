@@ -11,7 +11,7 @@ public class hero{
   //  必要情報: なし
   //  結果    : なし
   //  処理内容: hpを+100して画面にメッセージを出す
-  void sleep(){
+  public void sleep(){
     // thisは自分自身のインスタンスを示すもの
     this.hp = 100;
     System.out.println(this.name + "は,眠って回復した");
@@ -22,7 +22,7 @@ public class hero{
   //  結果    : なし
   //  処理内容: 必要情報の数値だけhpに追加して
   //          : メセージを表示
-  void sit(int sec){
+  public void sit(int sec){
     this.hp += sec; // 引数の値だけhpに追加
     
     System.out.println(this.name + "は、" + sec + "秒座った" );
@@ -39,7 +39,7 @@ public class hero{
   }
   
   // 逃げ出したときの表示
-  void run(){
+  public void run(){
     System.out.println(this.name +"は逃げ出した");
     System.out.println("ゲームオーバー");
     System.out.println("最終HPは" + this.hp +"でした");
