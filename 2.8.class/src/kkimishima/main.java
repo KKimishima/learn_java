@@ -1,7 +1,7 @@
 // ゲームの操作を行うメインクラス
 //
-package game.main;
-import game.charC.*;
+package kkimishima;
+import  kkimishima.game.ch.*;
 
 class game_main {
   public static void main(String args[]) {
@@ -14,5 +14,7 @@ class game_main {
     System.out.println("勇者\"" + player1.name + "\"を生み出した");
 
     // 3. 
+    player1.slip();
+
   }
 }

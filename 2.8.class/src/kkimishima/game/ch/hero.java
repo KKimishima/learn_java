@@ -1,11 +1,11 @@
 // ヒーロクラス
 // ゲームキャラクタと状態と操作を示す
-package game.charC;
+package kkimishima.game.ch;
 
 public class hero{
   // これら、変数をjavaではフィールドという
-  int     hp;     // ヒットポイント
-  String  name;   // プレイヤーの名前
+  public  int     hp;     // ヒットポイント
+  public  String  name;   // プレイヤーの名前
 
   //  名前    : sleep
   //  必要情報: なし
@@ -31,7 +31,7 @@ public class hero{
 
   // 転んだときのメソッド
   // hpを-5する
-  void slip(){
+  public void slip(){
     this.hp -= 5;
 
     System.out.println(this.name + "転んだ");
