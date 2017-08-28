@@ -14,8 +14,7 @@ public class GameMain{
     // キャラクター作成
     System.out.println("キャラクター名を入力してください");
     System.out.print("キャラクタ名:");
-    playerName = new java.util.Scanner(System.in).nextLine(); // 名前入力
-    
+    playerName = new java.util.Scanner(System.in).nextLine(); // 名前入力   
     playChar = new Hero(playerName);                          // インスタンス
     playChar.status();                                        // ステータスメソッド
 

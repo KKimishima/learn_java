@@ -19,7 +19,6 @@ public class Hero{
   public  Hero(String name){
     this.hp  = 100;
     this.name = name;
-    this
     System.out.println("\nキャラクター:" + this.name + "を作成!!!\n");
   }
   // コンストラクタ
