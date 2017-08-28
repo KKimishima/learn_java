@@ -1,5 +1,5 @@
 // ソードのクラス
-package icloud.kimishima.classfield.Weapon;
+package icloud.kimishima.ClassField.Weapon;
 
 public class Sword {
   public int     damage; // 与えるダメージ
