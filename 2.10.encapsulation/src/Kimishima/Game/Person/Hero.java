@@ -1,16 +1,18 @@
 package Kimishima.Game.Person;
+import  Kimishima.Game.Weapon.*;
 
 public class Hero{
   private int     hp;   // HP
   private String  name; // 名前
   static  int     money = 1000;  //所持金
+  static public Sword sword;
 
   public void status(){
     System.out.println("******************");
     System.out.println("キャラのステータス");
     System.out.println("名前  " + this.name);
     System.out.println("HP   " +  this.hp + "ポイント");
-    System.out.println("所持金" + this.money + "ゴールド");
+    System.out.println("所持金" + Hero.money + "ゴールド");
     System.out.println("******************");
   }
 
