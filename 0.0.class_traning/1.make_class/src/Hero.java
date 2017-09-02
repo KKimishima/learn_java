@@ -17,7 +17,7 @@ class  Hero{
     ap    = 7;
     dp    = 5;
     sp    = 10;
-   System.out.println(this.name + "が生成されました");
+   System.out.println(th5s.name + "が生成されました");
 
   }
   

@@ -23,6 +23,8 @@ class Monster{
     System.out.println(this.name +"は" + damege_value + "のダメージ");
     System.out.println(this.name +"の残り体力は" + temp);
   }
+
+  public void status(){
+    System.out.println(this.name +"の体力の残りは" + this.hp);
+  }
 }
-
-

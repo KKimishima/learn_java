@@ -16,12 +16,19 @@ class MakeClass {
 
    random_value =  random_init();
    System.out.println("ランダム生成" + random_value);
-   emeny.damege(player.attck(random_value));
+   Battel(player,emeny,random_value);
+   emeny.status();
+   //emeny.damege(player.attck(random_value));
   }
   static public int  random_init(){
     // Randクラスのインスタンス
     Random rm = new Random();
 
-    return rm.nextInt(3) + 1;
+    return rm.nextInt(5) + 1;
+  }
+  static public void Battel(Hero player,Monster emeny,int random_value){
+    System.out.println("クラスの受け渡しテスト");
+    player.attck(random_value);
+    emeny.damege(random_value);
   }
 }
