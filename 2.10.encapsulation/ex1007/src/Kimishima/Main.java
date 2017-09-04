@@ -27,10 +27,12 @@ class Main {
     player2.setMp(40);        // デバッグ用
     //System.out.print("武器名:");
     //player2.setMp(new java.util.Scanner(System.in).nextInt());
-    player2.wand.setName("杖");        // デバッグ用
+    //player2.wand.setName("杖");        // デバッグ用
+    player2.getWand().setName("杖");
     //System.out.print("武器の強さ:");
     //player2.setMp(new java.util.Scanner(System.in).nextInt());
-    player2.wand.setPower(0.7);        // デバッグ用
+    //player2.wand.setPower(0.7);        // デバッグ用
+    player2.getWand().setPower(0.7);
   
     player2.printStatus();
     
