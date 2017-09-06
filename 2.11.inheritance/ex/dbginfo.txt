@@ -1,0 +1,250 @@
+./src/Kimishima/Hero.java:5: エラー: Heroはabstractでなく、Character内のabstractメソッドmagic_attck()をオーバーライドしません
+public class Hero extends Character{
+       ^
+./src/Kimishima/Hero.java:17: エラー: max_hpはCharacterでprivateアクセスされます
+    super.max_hp = max_hp;
+         ^
+./src/Kimishima/Hero.java:21: エラー: max_mpはCharacterでprivateアクセスされます
+    super.max_mp = max_mp;
+         ^
+./src/Kimishima/Hero.java:23: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
+  @Override
+  ^
+./src/Kimishima/Hero.java:25: エラー: powerはCharacterでprivateアクセスされます
+    int damage = (int)(super.power * rand_pont());
+                            ^
+./src/Kimishima/Hero.java:25: エラー: シンボルを見つけられません
+    int damage = (int)(super.power * rand_pont());
+                                     ^
+  シンボル:   メソッド rand_pont()
+  場所: クラス Hero
+./src/Kimishima/Hero.java:26: エラー: シンボルを見つけられません
+    mon.setHp = (mon.getHp * mon.getDefens) - damege;
+       ^
+  シンボル:   変数 setHp
+  場所: タイプMonsterの変数 mon
+./src/Kimishima/Hero.java:26: エラー: シンボルを見つけられません
+    mon.setHp = (mon.getHp * mon.getDefens) - damege;
+                    ^
+  シンボル:   変数 getHp
+  場所: タイプMonsterの変数 mon
+./src/Kimishima/Hero.java:26: エラー: シンボルを見つけられません
+    mon.setHp = (mon.getHp * mon.getDefens) - damege;
+                                ^
+  シンボル:   変数 getDefens
+  場所: タイプMonsterの変数 mon
+./src/Kimishima/Hero.java:26: エラー: シンボルを見つけられません
+    mon.setHp = (mon.getHp * mon.getDefens) - damege;
+                                              ^
+  シンボル:   変数 damege
+  場所: クラス Hero
+./src/Kimishima/Hero.java:29: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + mon.name + "に攻撃!!!");
+                            ^
+./src/Kimishima/Hero.java:29: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + mon.name + "に攻撃!!!");
+                                              ^
+./src/Kimishima/Hero.java:30: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(mon.name + "は、" + damege  + "ポイントのダメージ!!!");
+                          ^
+./src/Kimishima/Hero.java:30: エラー: シンボルを見つけられません
+    System.out.println(mon.name + "は、" + damege  + "ポイントのダメージ!!!");
+                                         ^
+  シンボル:   変数 damege
+  場所: クラス Hero
+./src/Kimishima/Hero.java:37: エラー: シンボルを見つけられません
+    int protectUp = (int)(super.getDefens() * rand_pont());
+                                              ^
+  シンボル:   メソッド rand_pont()
+  場所: クラス Hero
+./src/Kimishima/Hero.java:38: エラー: シンボルを見つけられません
+    super.setDefens = super.getDefens() + protectUp;
+         ^
+  シンボル: 変数 setDefens
+./src/Kimishima/Hero.java:41: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、身を守った!!!");
+                            ^
+./src/Kimishima/Hero.java:42: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + protectUp  + "ポイント防御力アップ!!!");
+                            ^
+./src/Kimishima/Hero.java:47: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
+  @Override
+  ^
+./src/Kimishima/Hero.java:49: エラー: magicはCharacterでprivateアクセスされます
+    int magic_damage = (int)(super.magic * rand_pont());
+                                  ^
+./src/Kimishima/Hero.java:49: エラー: シンボルを見つけられません
+    int magic_damage = (int)(super.magic * rand_pont());
+                                           ^
+  シンボル:   メソッド rand_pont()
+  場所: クラス Hero
+./src/Kimishima/Hero.java:50: エラー: シンボルを見つけられません
+    mon.setHp = (mon.getHp * mon.getDefens) - magic_damage;
+       ^
+  シンボル:   変数 setHp
+  場所: タイプMonsterの変数 mon
+./src/Kimishima/Hero.java:50: エラー: シンボルを見つけられません
+    mon.setHp = (mon.getHp * mon.getDefens) - magic_damage;
+                    ^
+  シンボル:   変数 getHp
+  場所: タイプMonsterの変数 mon
+./src/Kimishima/Hero.java:50: エラー: シンボルを見つけられません
+    mon.setHp = (mon.getHp * mon.getDefens) - magic_damage;
+                                ^
+  シンボル:   変数 getDefens
+  場所: タイプMonsterの変数 mon
+./src/Kimishima/Hero.java:53: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + mon.name + "に魔法攻撃!!!");
+                            ^
+./src/Kimishima/Hero.java:53: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + mon.name + "に魔法攻撃!!!");
+                                              ^
+./src/Kimishima/Hero.java:54: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(mon.name + "は、" + magic_damage + "ポイントのダメージ!!!");
+                          ^
+./src/Kimishima/Monster.java:5: エラー: Monsterはabstractでなく、Character内のabstractメソッドmagic_attck()をオーバーライドしません
+public class Monster extends Character{
+       ^
+./src/Kimishima/Monster.java:7: エラー: jobはCharacterでprivateアクセスされます
+    job   = "モンスター";
+    ^
+./src/Kimishima/Monster.java:8: エラー: nameはCharacterでprivateアクセスされます
+    name  = "スライム";
+    ^
+./src/Kimishima/Monster.java:9: エラー: hpはCharacterでprivateアクセスされます
+    hp    = 50;
+    ^
+./src/Kimishima/Monster.java:10: エラー: mpはCharacterでprivateアクセスされます
+    mp    = 10;
+    ^
+./src/Kimishima/Monster.java:11: エラー: powerはCharacterでprivateアクセスされます
+    power = 10;
+    ^
+./src/Kimishima/Monster.java:12: エラー: defensはCharacterでprivateアクセスされます
+    defens =1.1;
+    ^
+./src/Kimishima/Monster.java:13: エラー: magicはCharacterでprivateアクセスされます
+    magic  =8;
+    ^
+./src/Kimishima/Monster.java:18: エラー: max_hpはCharacterでprivateアクセスされます
+    super.max_hp = max_hp;
+         ^
+./src/Kimishima/Monster.java:22: エラー: max_mpはCharacterでprivateアクセスされます
+   super.max_mp = max_mp;
+        ^
+./src/Kimishima/Monster.java:25: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
+  @Override
+  ^
+./src/Kimishima/Monster.java:27: エラー: powerはCharacterでprivateアクセスされます
+    int damage = (int)(super.power * rand_pont());
+                            ^
+./src/Kimishima/Monster.java:27: エラー: シンボルを見つけられません
+    int damage = (int)(super.power * rand_pont());
+                                     ^
+  シンボル:   メソッド rand_pont()
+  場所: クラス Monster
+./src/Kimishima/Monster.java:28: エラー: シンボルを見つけられません
+    hero.setHp = (hero.getHp * hero.getDefens) - damege;
+        ^
+  シンボル:   変数 setHp
+  場所: タイプHeroの変数 hero
+./src/Kimishima/Monster.java:28: エラー: シンボルを見つけられません
+    hero.setHp = (hero.getHp * hero.getDefens) - damege;
+                      ^
+  シンボル:   変数 getHp
+  場所: タイプHeroの変数 hero
+./src/Kimishima/Monster.java:28: エラー: シンボルを見つけられません
+    hero.setHp = (hero.getHp * hero.getDefens) - damege;
+                                   ^
+  シンボル:   変数 getDefens
+  場所: タイプHeroの変数 hero
+./src/Kimishima/Monster.java:28: エラー: シンボルを見つけられません
+    hero.setHp = (hero.getHp * hero.getDefens) - damege;
+                                                 ^
+  シンボル:   変数 damege
+  場所: クラス Monster
+./src/Kimishima/Monster.java:31: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + hero.name + "に攻撃!!!");
+                            ^
+./src/Kimishima/Monster.java:31: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + hero.name + "に攻撃!!!");
+                                               ^
+./src/Kimishima/Monster.java:32: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(hero.name + "は、" + damege  + "ポイントのダメージ!!!");
+                           ^
+./src/Kimishima/Monster.java:32: エラー: シンボルを見つけられません
+    System.out.println(hero.name + "は、" + damege  + "ポイントのダメージ!!!");
+                                          ^
+  シンボル:   変数 damege
+  場所: クラス Monster
+./src/Kimishima/Monster.java:39: エラー: シンボルを見つけられません
+    int protectUp = (int)(super.getDefens() * rand_pont());
+                                              ^
+  シンボル:   メソッド rand_pont()
+  場所: クラス Monster
+./src/Kimishima/Monster.java:40: エラー: シンボルを見つけられません
+    super.setDefens = super.getDefens() + protectUp;
+         ^
+  シンボル: 変数 setDefens
+./src/Kimishima/Monster.java:43: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、身を守った!!!");
+                            ^
+./src/Kimishima/Monster.java:44: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + protectUp  + "ポイント防御力アップ!!!");
+                            ^
+./src/Kimishima/Monster.java:49: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
+  @Override
+  ^
+./src/Kimishima/Monster.java:51: エラー: magicはCharacterでprivateアクセスされます
+    int magic_damage = (int)(super.magic * rand_pont());
+                                  ^
+./src/Kimishima/Monster.java:51: エラー: シンボルを見つけられません
+    int magic_damage = (int)(super.magic * rand_pont());
+                                           ^
+  シンボル:   メソッド rand_pont()
+  場所: クラス Monster
+./src/Kimishima/Monster.java:52: エラー: シンボルを見つけられません
+    hero.setHp = (hero.getHp * hero.getDefens) - magic_damage;
+        ^
+  シンボル:   変数 setHp
+  場所: タイプHeroの変数 hero
+./src/Kimishima/Monster.java:52: エラー: シンボルを見つけられません
+    hero.setHp = (hero.getHp * hero.getDefens) - magic_damage;
+                      ^
+  シンボル:   変数 getHp
+  場所: タイプHeroの変数 hero
+./src/Kimishima/Monster.java:52: エラー: シンボルを見つけられません
+    hero.setHp = (hero.getHp * hero.getDefens) - magic_damage;
+                                   ^
+  シンボル:   変数 getDefens
+  場所: タイプHeroの変数 hero
+./src/Kimishima/Monster.java:55: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + hero.name + "に魔法攻撃!!!");
+                            ^
+./src/Kimishima/Monster.java:55: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(super.name + "は、" + hero.name + "に魔法攻撃!!!");
+                                               ^
+./src/Kimishima/Monster.java:56: エラー: nameはCharacterでprivateアクセスされます
+    System.out.println(hero.name + "は、" + magic_damage + "ポイントのダメージ!!!");
+                           ^
+./src/Kimishima/Main.java:14: エラー: シンボルを見つけられません
+    he.setMax_hp = 100;
+      ^
+  シンボル:   変数 setMax_hp
+  場所: タイプHeroの変数 he
+./src/Kimishima/Main.java:15: エラー: シンボルを見つけられません
+    he.setMax_mp = 30;
+      ^
+  シンボル:   変数 setMax_mp
+  場所: タイプHeroの変数 he
+./src/Kimishima/Main.java:16: エラー: シンボルを見つけられません
+    mo.setMax_hp = 50;
+      ^
+  シンボル:   変数 setMax_hp
+  場所: タイプMonsterの変数 mo
+./src/Kimishima/Main.java:17: エラー: シンボルを見つけられません
+    mo.setMax_mp = 10;
+      ^
+  シンボル:   変数 setMax_mp
+  場所: タイプMonsterの変数 mo
+エラー65個
