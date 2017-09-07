@@ -11,10 +11,10 @@ class Main {
     Monster mo = new Monster();
     
     // 最大設定
-    he.setMax_hp = 100;
-    he.setMax_mp = 30;
-    mo.setMax_hp = 50;
-    mo.setMax_mp = 10;
+    he.setMax_hp(100);
+    he.setMax_mp(30);
+    mo.setMax_hp(50);
+    mo.setMax_mp(10);
 
     // ステータス表示
     he.showStatus();
