@@ -10,33 +10,9 @@ public class Hero extends Character{
 ./src/Kimishima/Hero.java:23: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
   @Override
   ^
-./src/Kimishima/Hero.java:25: エラー: rand_pont()はCharacterでprivateアクセスされます
-    int damage = (int)(super.getPower() * super.rand_pont());
-                                               ^
-./src/Kimishima/Hero.java:26: エラー: シンボルを見つけられません
-    mon.setHp((mon.getHp() * mon.getDefens()) - damege);
-                                                ^
-  シンボル:   変数 damege
-  場所: クラス Hero
-./src/Kimishima/Hero.java:30: エラー: シンボルを見つけられません
-    System.out.println(mon.getName() + "は、" + damege  + "ポイントのダメージ!!!");
-                                              ^
-  シンボル:   変数 damege
-  場所: クラス Hero
-./src/Kimishima/Hero.java:37: エラー: rand_pont()はCharacterでprivateアクセスされます
-    int protectUp = (int)(super.getDefens() * super.rand_pont());
-                                                   ^
 ./src/Kimishima/Hero.java:47: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
   @Override
   ^
-./src/Kimishima/Hero.java:49: エラー: シンボルを見つけられません
-    int magic_damage = (int)(super.getMagic() * rand_pont());
-                                                ^
-  シンボル:   メソッド rand_pont()
-  場所: クラス Hero
-./src/Kimishima/Hero.java:50: エラー: 不適合な型: 精度が失われる可能性があるdoubleからintへの変換
-    mon.setHp((mon.getHp() * mon.getDefens()) - magic_damage);
-                                              ^
 ./src/Kimishima/Monster.java:5: エラー: Monsterはabstractでなく、Character内のabstractメソッドmagic_attck()をオーバーライドしません
 public class Monster extends Character{
        ^
@@ -49,32 +25,7 @@ public class Monster extends Character{
 ./src/Kimishima/Monster.java:25: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
   @Override
   ^
-./src/Kimishima/Monster.java:27: エラー: シンボルを見つけられません
-    int damage = (int)(super.getPower() * supe.rand_pont());
-                                          ^
-  シンボル:   変数 supe
-  場所: クラス Monster
-./src/Kimishima/Monster.java:28: エラー: シンボルを見つけられません
-    hero.setHp((hero.getHp() * hero.getDefens()) - damege);
-                                                   ^
-  シンボル:   変数 damege
-  場所: クラス Monster
-./src/Kimishima/Monster.java:32: エラー: シンボルを見つけられません
-    System.out.println(hero.getName() + "は、" + damege  + "ポイントのダメージ!!!");
-                                               ^
-  シンボル:   変数 damege
-  場所: クラス Monster
-./src/Kimishima/Monster.java:39: エラー: rand_pont()はCharacterでprivateアクセスされます
-    int protectUp = (int)(super.getDefens() *super.rand_pont());
-                                                  ^
 ./src/Kimishima/Monster.java:49: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
   @Override
   ^
-./src/Kimishima/Monster.java:51: エラー: rand_pont()はCharacterでprivateアクセスされます
-    int magic_damage = (int)(super.getMagic() * super.rand_pont());
-                                                     ^
-./src/Kimishima/Monster.java:52: エラー: 不適合な型: 精度が失われる可能性があるdoubleからintへの変換
-    hero.setHp((hero.getHp() * hero.getDefens()) - magic_damage);
-                                                 ^
-注意:一部のメッセージは簡略化されています。-Xdiags:verboseで再コンパイルして完全な出力を取得してください
-エラー22個
+エラー10個

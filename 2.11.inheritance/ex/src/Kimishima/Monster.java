@@ -24,19 +24,19 @@ public class Monster extends Character{
 
   @Override
   public void attck(Hero hero){
-    int damage = (int)(super.getPower() * supe.rand_pont());
-    hero.setHp((hero.getHp() * hero.getDefens()) - damege);
+    int damage = (int)(super.getPower() * super.rand_pont());
+    hero.setHp((int)(hero.getHp() * hero.getDefens()) - damage);
 
     System.out.println("\n=====================================");
     System.out.println(super.getName() + "は、" + hero.getName() + "に攻撃!!!");
-    System.out.println(hero.getName() + "は、" + damege  + "ポイントのダメージ!!!");
+    System.out.println(hero.getName() + "は、" + damage  + "ポイントのダメージ!!!");
     System.out.println("\n=====================================");
 
   }
 
   @Override
   public void protect(){
-    int protectUp = (int)(super.getDefens() *super.rand_pont());
+    int protectUp = (int)(super.getDefens() * super.rand_pont());
     super.setDefens(super.getDefens() + protectUp);
 
     System.out.println("\n=====================================");
@@ -49,7 +49,7 @@ public class Monster extends Character{
   @Override
   public void magic_attck(Hero hero){
     int magic_damage = (int)(super.getMagic() * super.rand_pont());
-    hero.setHp((hero.getHp() * hero.getDefens()) - magic_damage);
+    hero.setHp((int)(hero.getHp() * hero.getDefens()) - magic_damage);
 
     System.out.println("\n=====================================");
     System.out.println(super.getName() + "は、" + hero.getName() + "に魔法攻撃!!!");

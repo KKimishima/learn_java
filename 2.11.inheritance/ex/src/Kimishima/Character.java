@@ -108,7 +108,7 @@ public abstract class Character{
   public  abstract void magic_attck();
   
   // 関数的
-  private static double rand_pont(){
+  public static double rand_pont(){
     return new java.util.Random().nextDouble();
   }
 }

@@ -23,11 +23,11 @@ public class Hero extends Character{
   @Override
   public void attck(Monster mon){
     int damage = (int)(super.getPower() * super.rand_pont());
-    mon.setHp((mon.getHp() * mon.getDefens()) - damege);
+    mon.setHp((int)(mon.getHp() * mon.getDefens()) - damage);
 
     System.out.println("\n=====================================");
     System.out.println(super.getName() + "は、" + mon.getName() + "に攻撃!!!");
-    System.out.println(mon.getName() + "は、" + damege  + "ポイントのダメージ!!!");
+    System.out.println(mon.getName() + "は、" + damage  + "ポイントのダメージ!!!");
     System.out.println("\n=====================================");
 
   }
@@ -47,7 +47,7 @@ public class Hero extends Character{
   @Override
   public void magic_attck(Monster mon){
     int magic_damage = (int)(super.getMagic() * rand_pont());
-    mon.setHp((mon.getHp() * mon.getDefens()) - magic_damage);
+    mon.setHp((int)(mon.getHp() * mon.getDefens()) - magic_damage);
 
     System.out.println("\n=====================================");
     System.out.println(super.getName() + "は、" + mon.getName() + "に魔法攻撃!!!");
