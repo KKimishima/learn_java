@@ -101,11 +101,11 @@ public abstract class Character{
 
   // メソッド
   // 抽象クラス
-  public  abstract void attck();
+//  public  abstract void attck();
 
-  public  abstract void protect();
+//  public  abstract void protect();
 
-  public  abstract void magic_attck();
+//  public  abstract void magic_attck();
   
   // 関数的
   public static double rand_pont(){

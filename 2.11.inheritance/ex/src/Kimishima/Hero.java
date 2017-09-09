@@ -20,7 +20,7 @@ public class Hero extends Character{
   public void setMax_mp(int max_mp){
     super.setMax_mp(max_mp);
   }
-  @Override
+//  @Override
   public void attck(Monster mon){
     int damage = (int)(super.getPower() * super.rand_pont());
     mon.setHp((int)(mon.getHp() * mon.getDefens()) - damage);
@@ -32,7 +32,7 @@ public class Hero extends Character{
 
   }
 
-  @Override
+//  @Override
   public void protect(){
     int protectUp = (int)(super.getDefens() * super.rand_pont());
     super.setDefens(super.getDefens() + protectUp);
@@ -44,7 +44,7 @@ public class Hero extends Character{
     
     }
 
-  @Override
+//  @Override
   public void magic_attck(Monster mon){
     int magic_damage = (int)(super.getMagic() * rand_pont());
     mon.setHp((int)(mon.getHp() * mon.getDefens()) - magic_damage);

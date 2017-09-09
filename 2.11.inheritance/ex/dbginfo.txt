@@ -1,31 +1,13 @@
-./src/Kimishima/Hero.java:5: エラー: Heroはabstractでなく、Character内のabstractメソッドmagic_attck()をオーバーライドしません
-public class Hero extends Character{
-       ^
-./src/Kimishima/Hero.java:17: エラー: 抽象メソッドであるsetMax_hp(int)(Character内)に直接アクセスすることはできません
-    super.setMax_hp(max_hp);
-         ^
-./src/Kimishima/Hero.java:21: エラー: 抽象メソッドであるsetMax_mp(int)(Character内)に直接アクセスすることはできません
+./src/Kimishima/Hero.java:17: エラー: staticでないメソッド setMax_hp(int)をstaticコンテキストから参照することはできません
+    Character.setMax_hp(max_hp);
+             ^
+./src/Kimishima/Hero.java:21: エラー: 抽象メソッドであるsetMax_mp(int)(Character内)直接アクセスすることはできません
     super.setMax_mp(max_mp);
          ^
-./src/Kimishima/Hero.java:23: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
-  @Override
-  ^
-./src/Kimishima/Hero.java:47: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
-  @Override
-  ^
-./src/Kimishima/Monster.java:5: エラー: Monsterはabstractでなく、Character内のabstractメソッドmagic_attck()をオーバーライドしません
-public class Monster extends Character{
-       ^
 ./src/Kimishima/Monster.java:18: エラー: 抽象メソッドであるsetMax_hp(int)(Character内)に直接アクセスすることはできません
     super.setMax_hp(max_hp);
          ^
 ./src/Kimishima/Monster.java:22: エラー: 抽象メソッドであるsetMax_mp(int)(Character内)に直接アクセスすることはできません
    super.setMax_mp(max_mp);
         ^
-./src/Kimishima/Monster.java:25: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
-  @Override
-  ^
-./src/Kimishima/Monster.java:49: エラー: メソッドはスーパータイプのメソッドをオーバーライドまたは実装しません
-  @Override
-  ^
-エラー10個
+エラー4個
