@@ -15,11 +15,11 @@ public class Monster extends Character{
   
    @Override
   public void setMax_hp(int max_hp){
-    super.setMax_hp(max_hp);
+    super.initMax_hp(max_hp);
   }
   @Override
   public void setMax_mp(int max_mp){
-   super.setMax_mp(max_mp);
+   super.initMax_mp(max_mp);
   }
 
 //  @Override

@@ -1,4 +1,4 @@
-package Kimshima;
+package Kimishima;
 import  Kimishima.Hero;
 import  Kimishima.Monster;
 
@@ -22,12 +22,22 @@ class Main {
 
     // ヒーロ攻撃
     he.attck(mo);
-    he.magic_attck(mo);
-    he.protect();
+    mo.showStatus();
 
+    he.magic_attck(mo);
+    mo.showStatus();
+ 
+    he.protect();
+    mo.showStatus();
+    
     // モンスタ攻撃
     mo.attck(he);
     mo.magic_attck(he);
     mo.protect();
+
+    // 再度ステータス表示
+    he.showStatus();
+    mo.showStatus();
+   
  }
 }

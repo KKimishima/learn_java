@@ -39,7 +39,7 @@ public abstract class Character{
     this.hp = hp;
   }
   public void setMp(int mp){
-    this.hp = mp;
+    this.mp = mp;
   }
   public void setPower(int power){
     this.power = power;
@@ -51,11 +51,18 @@ public abstract class Character{
     this.magic = magic;
   }
 
-  // 抽象クラスクラス
-  // オーバライド必須
-   public abstract void setMax_hp(int max_hp);
+  public void initMax_hp(int max_hp){
+    this.max_hp = max_hp;
+  }
+   public void initMax_mp(int max_mp){
+    this.max_mp = max_mp;
+  }
   
-   public abstract void setMax_mp(int Max_mp);
+  //抽象クラスクラス
+  // オーバライド必須
+  public abstract void setMax_hp(int max_hp);
+  
+  public abstract void setMax_mp(int Max_mp);
 
   // getter
   public String getJob(){
@@ -86,13 +93,14 @@ public abstract class Character{
     return this.max_mp;
   }
 
+
   // showStatus
   public void showStatus(){
     System.out.println("\n***********************");
     System.out.println("職業:" + this.job);
     System.out.println("名前:" + this.name);
     System.out.println("HP:" + this.hp +  "/" + this.max_hp);
-    System.out.println("MP:" + this.mp +  "/" + this.max_hp);
+    System.out.println("MP:" + this.mp +  "/" + this.max_mp);
     System.out.println("攻撃力:" + this.power);
     System.out.println("防御力:" + this.defens);
     System.out.println("魔力:" + this.magic);
@@ -109,6 +117,7 @@ public abstract class Character{
   
   // 関数的
   public static double rand_pont(){
-    return new java.util.Random().nextDouble();
+    double rand=new java.util.Random().nextDouble();
+    return rand +1;
   }
 }
