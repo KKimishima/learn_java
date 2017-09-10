@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CP	Makefile	/^CP = .\/bin\/$/;"	m
+Hero	src/Kimishima/Hero.java	/^  public Hero(){$/;"	m	class:Hero
+Hero	src/Kimishima/Hero.java	/^  public Hero(String name){$/;"	m	class:Hero
+Hero	src/Kimishima/Hero.java	/^public class Hero{$/;"	c
+Kimishima	src/Kimishima/Hero.java	/^package Kimishima;$/;"	p
+Kimishima	src/Kimishima/Main.java	/^package Kimishima;$/;"	p
+Kimishima	src/Kimishima/Matango.java	/^package Kimishima;$/;"	p
+Kimishima	src/Kimishima/PoisonMatango.java	/^package Kimishima;$/;"	p
+MAIN	Makefile	/^MAIN = Kimishima.Main$/;"	m
+Main	src/Kimishima/Main.java	/^class Main {$/;"	c
+Matango	src/Kimishima/Matango.java	/^  public Matango(char suffix){$/;"	m	class:Matango
+Matango	src/Kimishima/Matango.java	/^public class Matango {$/;"	c
+PoisonMatango	src/Kimishima/PoisonMatango.java	/^  public PoisonMatango(char suffix){$/;"	m	class:PoisonMatango
+PoisonMatango	src/Kimishima/PoisonMatango.java	/^public class PoisonMatango extends Matango{$/;"	c
+SO	Makefile	/^SO = .\/src\/Kimishima\/*.java$/;"	m
+attack	src/Kimishima/Matango.java	/^  public void attack(Hero he){$/;"	m	class:Matango
+getHp	src/Kimishima/Hero.java	/^  public int getHp(){$/;"	m	class:Hero
+getHp	src/Kimishima/Matango.java	/^  public int  getHp(){$/;"	m	class:Matango
+getName	src/Kimishima/Hero.java	/^  public String getName(){$/;"	m	class:Hero
+getName	src/Kimishima/Matango.java	/^  public String getName(){$/;"	m	class:Matango
+getSuffix	src/Kimishima/Matango.java	/^  public char getSuffix(){$/;"	m	class:Matango
+hp	src/Kimishima/Hero.java	/^  private int     hp;$/;"	f	class:Hero	file:
+hp	src/Kimishima/Matango.java	/^  private int     hp = 50;$/;"	f	class:Matango	file:
+main	src/Kimishima/Main.java	/^  public static void main(String args[]) {$/;"	m	class:Main
+name	src/Kimishima/Hero.java	/^  private String  name;$/;"	f	class:Hero	file:
+name	src/Kimishima/Matango.java	/^  private String  name;$/;"	f	class:Matango	file:
+poisonAttck	src/Kimishima/PoisonMatango.java	/^  public void poisonAttck(Hero he){$/;"	m	class:PoisonMatango
+setHp	src/Kimishima/Hero.java	/^  public void setHp(int hp){$/;"	m	class:Hero
+setName	src/Kimishima/Matango.java	/^  public void setName(String name){$/;"	m	class:Matango
+setShffix	src/Kimishima/Matango.java	/^  public void setShffix(char suffix){$/;"	m	class:Matango
+showStatus	src/Kimishima/Hero.java	/^  public void showStatus(){$/;"	m	class:Hero
+showStatus	src/Kimishima/Matango.java	/^  public void showStatus(){$/;"	m	class:Matango
+suffix	src/Kimishima/Matango.java	/^  private char    suffix; \/\/ 識別記号$/;"	f	class:Matango	file:
