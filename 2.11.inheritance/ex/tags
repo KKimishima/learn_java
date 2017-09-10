@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CP	Makefile	/^CP    = .\/bin\/$/;"	m
+Character	src/Kimishima/Character.java	/^  public Character(){$/;"	m	class:Character
+Character	src/Kimishima/Character.java	/^public abstract class Character{$/;"	c
+Hero	src/Kimishima/Hero.java	/^  public Hero(){$/;"	m	class:Hero
+Hero	src/Kimishima/Hero.java	/^public class Hero extends Character{$/;"	c
+Kimishima	src/Kimishima/Character.java	/^package Kimishima;$/;"	p
+Kimishima	src/Kimishima/Hero.java	/^package Kimishima;$/;"	p
+Kimishima	src/Kimishima/Main.java	/^package Kimishima;$/;"	p
+Kimishima	src/Kimishima/Monster.java	/^package Kimishima;$/;"	p
+MAIN	Makefile	/^MAIN  = Kimishima.Main;$/;"	m
+MAINSO	Makefile	/^MAINSO= .\/src\/$/;"	m
+Main	src/Kimishima/Main.java	/^class Main {$/;"	c
+Monster	src/Kimishima/Monster.java	/^   public Monster(){$/;"	m	class:Monster
+Monster	src/Kimishima/Monster.java	/^public class Monster extends Character{$/;"	c
+SO	Makefile	/^SO    = .\/src\/Kimishima\/*java$/;"	m
+attck	src/Kimishima/Hero.java	/^  public void attck(Monster mon){$/;"	m	class:Hero
+attck	src/Kimishima/Monster.java	/^  public void attck(Hero hero){$/;"	m	class:Monster
+defens	src/Kimishima/Character.java	/^  private   double  defens;$/;"	f	class:Character	file:
+getDefens	src/Kimishima/Character.java	/^  public double getDefens(){$/;"	m	class:Character
+getHp	src/Kimishima/Character.java	/^  public int getHp(){$/;"	m	class:Character
+getJob	src/Kimishima/Character.java	/^  public String getJob(){$/;"	m	class:Character
+getMagic	src/Kimishima/Character.java	/^ public double getMagic(){$/;"	m	class:Character
+getMax_hp	src/Kimishima/Character.java	/^  public int getMax_hp(){$/;"	m	class:Character
+getMax_mp	src/Kimishima/Character.java	/^  public double getMax_mp(){$/;"	m	class:Character
+getMp	src/Kimishima/Character.java	/^  public int getMp(){$/;"	m	class:Character
+getName	src/Kimishima/Character.java	/^  public String getName(){$/;"	m	class:Character
+getPower	src/Kimishima/Character.java	/^  public int getPower(){$/;"	m	class:Character
+hp	src/Kimishima/Character.java	/^  private   int     hp;$/;"	f	class:Character	file:
+initMax_hp	src/Kimishima/Character.java	/^  public void initMax_hp(int max_hp){$/;"	m	class:Character
+initMax_mp	src/Kimishima/Character.java	/^   public void initMax_mp(int max_mp){$/;"	m	class:Character
+job	src/Kimishima/Character.java	/^  private   String  job;$/;"	f	class:Character	file:
+magic	src/Kimishima/Character.java	/^  private   double  magic;$/;"	f	class:Character	file:
+magic_attck	src/Kimishima/Hero.java	/^  public void magic_attck(Monster mon){$/;"	m	class:Hero
+magic_attck	src/Kimishima/Monster.java	/^  public void magic_attck(Hero hero){$/;"	m	class:Monster
+main	src/Kimishima/Main.java	/^  public static void main(String args[]) {$/;"	m	class:Main
+max_hp	src/Kimishima/Character.java	/^  private   int     max_hp;$/;"	f	class:Character	file:
+max_mp	src/Kimishima/Character.java	/^  private   int     max_mp;$/;"	f	class:Character	file:
+mp	src/Kimishima/Character.java	/^  private   int     mp;$/;"	f	class:Character	file:
+name	src/Kimishima/Character.java	/^  private   String  name;$/;"	f	class:Character	file:
+power	src/Kimishima/Character.java	/^  private   int     power;$/;"	f	class:Character	file:
+protect	src/Kimishima/Hero.java	/^  public void protect(){$/;"	m	class:Hero
+protect	src/Kimishima/Monster.java	/^  public void protect(){$/;"	m	class:Monster
+rand_pont	src/Kimishima/Character.java	/^  public static double rand_pont(){$/;"	m	class:Character
+setDefens	src/Kimishima/Character.java	/^  public void setDefens(double  defens){$/;"	m	class:Character
+setHp	src/Kimishima/Character.java	/^  public void setHp(int hp){$/;"	m	class:Character
+setJob	src/Kimishima/Character.java	/^  public void setJob(String job){$/;"	m	class:Character
+setMagic	src/Kimishima/Character.java	/^  public void setMagic(double magic){$/;"	m	class:Character
+setMax_hp	src/Kimishima/Character.java	/^  public abstract void setMax_hp(int max_hp);$/;"	m	class:Character
+setMax_hp	src/Kimishima/Hero.java	/^  public void setMax_hp(int max_hp){$/;"	m	class:Hero
+setMax_hp	src/Kimishima/Monster.java	/^  public void setMax_hp(int max_hp){$/;"	m	class:Monster
+setMax_mp	src/Kimishima/Character.java	/^  public abstract void setMax_mp(int Max_mp);$/;"	m	class:Character
+setMax_mp	src/Kimishima/Hero.java	/^  public void setMax_mp(int max_mp){$/;"	m	class:Hero
+setMax_mp	src/Kimishima/Monster.java	/^  public void setMax_mp(int max_mp){$/;"	m	class:Monster
+setMp	src/Kimishima/Character.java	/^  public void setMp(int mp){$/;"	m	class:Character
+setName	src/Kimishima/Character.java	/^  public void setName(String name){$/;"	m	class:Character
+setPower	src/Kimishima/Character.java	/^  public void setPower(int power){$/;"	m	class:Character
+showStatus	src/Kimishima/Character.java	/^  public void showStatus(){$/;"	m	class:Character

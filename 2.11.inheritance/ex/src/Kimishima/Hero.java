@@ -9,7 +9,7 @@ public class Hero extends Character{
     super.setHp(100);
     super.setMp(30);
     super.setPower(30);
-    super.setDefens(1.4);
+    super.setDefens(1.8);
     super.setMagic(10);
   }
   @Override
@@ -23,20 +23,30 @@ public class Hero extends Character{
   }
 //  @Override
   public void attck(Monster mon){
-    int damage = (int)(super.getPower() * super.rand_pont());
-    mon.setHp((int)(mon.getHp() * mon.getDefens()) - damage);
+    System.out.println("\n=====================================");
+    System.out.println(super.getName() + "が、普通攻撃");
+    
+    int damage       = (int)(super.getPower() * super.rand_pont());
+    int defens_point = (int)((mon.getHp() * mon.getDefens()) - mon.getHp());
+    int damage_result= damage - defens_point;
+    
+    if(damage_result <= 0){
+      damage_result = 0;
+      System.out.println("攻撃失敗");
+    }
 
-    System.out.println("\n=====================================");
+    mon.setHp((int)(mon.getHp() - damage_result));
+    
     System.out.println(super.getName() + "は、" + mon.getName() + "に攻撃!!!");
-    System.out.println(mon.getName() + "は、" + damage  + "ポイントのダメージ!!!");
-    System.out.println("\n=====================================");
+    System.out.println(mon.getName() + "は、" + damage_result  + "ポイントのダメージ!!!");
+    System.out.println("=====================================");
 
   }
 
 //  @Override
   public void protect(){
     int protectUp = (int)(super.getDefens() * super.rand_pont());
-    super.setDefens(super.getDefens() + protectUp);
+    super.setDefens(super.getDefens() + (protectUp * 0.1));
 
     System.out.println("\n=====================================");
     System.out.println(super.getName() + "は、身を守った!!!");
@@ -47,13 +57,24 @@ public class Hero extends Character{
 
 //  @Override
   public void magic_attck(Monster mon){
-    int magic_damage = (int)(super.getMagic() * rand_pont());
-    mon.setHp((int)(mon.getHp() * mon.getDefens()) - magic_damage);
+    System.out.println("\n=====================================");
+    System.out.println(super.getName() + "が、魔法攻撃");
+ 
+    int magic_damage = (int)(super.getMagic() * super.rand_pont());
+    int defens_point = (int)((mon.getHp() * mon.getDefens()) - mon.getHp());
+    int magic_damage_result= magic_damage - defens_point;
 
-    System.out.println("\n=====================================");
+    if(magic_damage_result <= 0){
+      magic_damage_result = 0;
+
+      System.out.println("攻撃失敗");
+    }
+
+    mon.setHp((int)(mon.getHp() - magic_damage_result));
+
     System.out.println(super.getName() + "は、" + mon.getName() + "に魔法攻撃!!!");
-    System.out.println(mon.getName() + "は、" + magic_damage + "ポイントのダメージ!!!");
-    System.out.println("\n=====================================");
+    System.out.println(mon.getName() + "は、" + magic_damage_result + "ポイントのダメージ!!!");
+    System.out.println("=====================================");
    
   }
 }

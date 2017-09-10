@@ -24,17 +24,26 @@ class Main {
     he.attck(mo);
     mo.showStatus();
 
+    // 魔法攻撃
     he.magic_attck(mo);
     mo.showStatus();
  
-    he.protect();
-    mo.showStatus();
+    // 身を守る
+//    he.protect();
+//    he.showStatus();
     
     // モンスタ攻撃
     mo.attck(he);
+    he.showStatus();
+ 
+    // モンスタ魔法攻撃
     mo.magic_attck(he);
+    he.showStatus();
+    
+    // 身を守る
     mo.protect();
-
+    mo.showStatus();
+ 
     // 再度ステータス表示
     he.showStatus();
     mo.showStatus();
