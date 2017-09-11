@@ -13,7 +13,7 @@ public class Wizard{
   // Wandクラスから紐付け
 //  Wand wand = new Wand("魔法の杖",1.5);
   //private Wand wand;
-  public Wand wand;
+  private Wand wand;
 
   // コンストラクタ
   public Wizard(){
