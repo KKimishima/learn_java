@@ -31,6 +31,7 @@ main	src/Kimishima/Main.java	/^  public static void main(String args[]) {$/;"	m	
 name	src/Kimishima/Hero.java	/^  private String  name;$/;"	f	class:Hero	file:
 name	src/Kimishima/Matango.java	/^  private String  name;$/;"	f	class:Matango	file:
 poisonAttck	src/Kimishima/PoisonMatango.java	/^  public void poisonAttck(Hero he){$/;"	m	class:PoisonMatango
+poison_count	src/Kimishima/PoisonMatango.java	/^  private int poison_count = 5;  \/\/ 毒攻撃をできる上限回数$/;"	f	class:PoisonMatango	file:
 setHp	src/Kimishima/Hero.java	/^  public void setHp(int hp){$/;"	m	class:Hero
 setName	src/Kimishima/Matango.java	/^  public void setName(String name){$/;"	m	class:Matango
 setShffix	src/Kimishima/Matango.java	/^  public void setShffix(char suffix){$/;"	m	class:Matango

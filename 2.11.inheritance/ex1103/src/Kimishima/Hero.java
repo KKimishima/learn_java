@@ -8,7 +8,7 @@ public class Hero{
   // コンストラクタ
   // 引数なし
   public Hero(){
-    this.hp = 100;
+    this.hp = 200;
     this.name = "勇者";
   }
   // 名前の引数があるとき
